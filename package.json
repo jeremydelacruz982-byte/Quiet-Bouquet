@@ -1,0 +1,24 @@
+{
+  "name": "quiet-bouquet",
+  "version": "1.0.0",
+  "description": "Valentine's Day website with anonymous messaging and digital flower bouquets",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^10.4.0",
+    "firebase-admin": "^12.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
